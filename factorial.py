@@ -14,5 +14,24 @@ def fact(n):
     else: 
         return 1
 
-result = int(input("enter integer: "))
-print(fact(result))
+# result = int(input("enter integer: "))
+# print(fact(result))
+
+
+def factorial(n):
+    if n == 1:
+        return 1
+    return n * factorial(n - 1)
+
+print(factorial(1))
+
+
+# iterative way
+
+def factor(n):
+    num = 1
+    for x in range(1, n + 1):
+        num *= x
+    return num
+
+print(factor(8))
